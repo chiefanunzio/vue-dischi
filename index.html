@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>ajax</title>
+        <!-- font awesame -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+        <!-- bootstrap v4 -->
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+        <!-- vue -->
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <!-- vue cdn axios     -->
+        <script src="https://cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js"></script>
+        <!-- jquery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- css -->
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+    </head>
+<body>
+    <div id="app">
+        
+        <div class="cover" v-for="value in values" id="card">
+            <div class="card">
+                <img :src="value.poster" alt="">
+                <h3>{{value.title}}</h3>
+                <h2>
+                    {{value.author}}
+                </h2>
+                <span>
+                    {{value.genre}}
+                </span>
+                <span>
+                    {{value.year}}
+                </span>
+                
+            </div> 
+        </div>
+        <div >
+            <select name="filtri" id="filter">
+                <option value="">all</option>
+                <option v-for="gen in filter" 
+                :value="gen">{{gen}}</option>
+            </select>
+    
+        </div>
+    </div>
+</body>
+</html>

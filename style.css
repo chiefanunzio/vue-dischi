@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    width: 70%;
+    margin: auto;
+    color: #ddd;
+    background-image: radial-gradient(#2a35b0 100%, #fff 0%);
+    height: 100vh;
+    display: flex;
+    
+  }
+  
+  h2{
+    margin: 10px;
+  }
+
+  img{
+    width: 200px;
+  }
+  
+  .card{
+    width: 200px;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .cover{
+    display: flex;
+    justify-content: space-between;
+    
+    
+  }
+  #app{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  #filter{
+    width: 70px;
+    position: absolute;
+    top: 50px;
+    left:50px;
+  }
